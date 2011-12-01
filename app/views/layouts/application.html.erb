@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Bearsforsmiles</title>
-  <%= stylesheet_link_tag    "application" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
+  <title>Bears For Smiles</title>
+    <%= csrf_meta_tag %>
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <%= stylesheet_link_tag 'style', :media => 'screen' %>
+    <%= stylesheet_link_tag 'style', :media => 'print' %>
+    
+   <script type="text/javascript" language="javascript" src="/javascripts/prototype.js" ></script>
+
 </head>
 <body>
-
-<%= yield %>
-
+	<div id="master-container">	
+		<header>
+			<div class="main-container" id="header-container">
+				<div id="nav">
+					<p>Nav Links Here</p>
+					<ul>
+						<li><%= link_to "Home", root_path %></li>
+				  		<li><%= link_to "About", about_path %></li>
+				  		<li><%= link_to "Stories", stories_path %></li>
+					</ul>
+				</div>
+				
+				<div id="logo">
+					<p>Logo Container</p>
+				</div>
+			</div>
+		</header>
+			
+		<div class = "main-container" id="body-container">	
+			<%= yield %>
+		</div>
+			
+		<div id="footer">
+			<div class="main-container" id="footer-container">
+				<ul>
+				  <li><%= link_to "Home", root_path %></li>
+				  <li><%= link_to "About", about_path %></li>
+				  <li><%= link_to "Stories", stories_path %></li>
+				</ul>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
+

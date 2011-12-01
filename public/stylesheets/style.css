@@ -1,0 +1,36 @@
+/* CSS (c) John Zhang 2011 */
+
+/* reset */
+* 												{  margin: 0 auto; padding: 0; }
+
+.clear											{  clear:both; }
+
+
+/* structural */
+#master-container								{  width: 1000px; margin-left: auto; margin-right: auto; background-color: #f0f0f0;
+												}
+												
+#body-container									{  clear: both;
+												}
+												
+#footer-container								{  margin-top: 50px;
+												}
+												
+
+
+/* actual style */
+ul 												{  font-weight: none;
+												}
+												
+ul, li											{  list-style: none; display: inline; 
+												}
+												
+ul li a 										{  text-decoration: none; color: black;
+												}												
+ul li a:hover									{  color: blue;
+												}
+ul li a:visited									{  color: purple;
+												}
+
+#badges											{  float: left; 
+												}
